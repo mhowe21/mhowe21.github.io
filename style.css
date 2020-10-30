@@ -28,7 +28,7 @@ header h1 {
 /* split into 3 display columns. */
 .column{
     float: left;
-    width: 33%;
+    width: 33.3%;
     padding: 10px;
 }
 
