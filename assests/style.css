@@ -21,7 +21,22 @@ body {
     
 }
 
+/* Primary layout grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(3, 500px);
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "about-me about-me-content"
+    "work work-content"
+    "contact-info contact-info-content";
+}
 
+
+
+
+/* Top navigation bar */
 .navbar{    
     display: flex;
     /* align-items: center;     */
@@ -32,8 +47,6 @@ body {
     color: var(--light-blue);
     
 }
-
-/* Top Navigation Bar */
 .portfolio-name {
     font-size: 2rem;
     font-weight: bold;
@@ -67,50 +80,41 @@ body {
     height: 50vh;
 }
 
-/* About me section  */
-.about-me {
+/* structure Grid */
+.about-me-header {
+    grid-area: about-me;
+    color: var(--dark-blue);
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 2%;
-    margin-right: 10%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.about-me-header {
+.about-me-flex {
+    grid-area: about-me-content;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.about-me-flex img{
+    grid-area: about-me-content;    
+    display: flex;
+    height: 95%;
+    width: 30vw;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.about-me-text {
+    grid-area: about-me-content;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    margin-left: 1rem;
+
 }
-
-.about-me-header h2 {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    color: var(--dark-blue);
-}
-
-.about-me-header h2::after {
-    content: "";
-    display: flex;
-    height: 100%;
-    width: 0.25vw;
-    margin-right: 5vw;
-    margin-left: 1vw;
-    background-color: var(--dark-blue);
-}
-
-.about-me-img img{
-    display: flex;
-    justify-content: stretch;
-    height: 80%;
-    width: 80%;
-}
-
-/* Work Section */
-
-
 
 
