@@ -31,7 +31,7 @@ a{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(3, minmax(300px, auto));
+    grid-template-rows: repeat(3, minmax(80px, auto));
     grid-gap: 2rem;
     grid-template-areas: 
     "about-me about-me-content"
