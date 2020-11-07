@@ -125,10 +125,23 @@ a{
     margin-right: 5%;
 
 }
+
+.about-me-img{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .about-me-img img {
+    display: flex;
+    justify-content: center;
+} */
+
 .about-me-text{
     /* grid-area: about-me-content; */
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .about-me-text p{
@@ -153,6 +166,20 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+}
+
+.work-items {
+    grid-area: work-content;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(1fr));
+    grid-template-rows: repeat(3, minmax(150px, auto));
+    gap: 1rem;
+    grid-template-areas: 
+    "first-item first-item second-item"
+    "first-item first-item thrid-item"
+    "forth-item fith-item ."
+    ;
 
 }
 
