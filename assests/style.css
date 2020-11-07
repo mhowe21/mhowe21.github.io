@@ -1,8 +1,18 @@
 :root{
+
+    /* color variables */
     --light-blue: #88dffc;
     --dark-gray: #333;
     --light-gray: #555; 
     --dark-blue: #054a9e;
+
+    /* spacing */
+
+    /* font */
+    --TNR: Times-New-Roman;
+    --margin-top1: 1rem;
+   
+
 }
 
 *{
@@ -16,21 +26,18 @@ a{
     color: var(--light-blue);
 }
 
-body {
-    background-color: lightgray;
-    
-}
 
 /* Primary layout grid */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(3, 500px);
-    grid-gap: 1rem;
+    grid-template-rows: repeat(3, minmax(300px, auto));
+    grid-gap: 2rem;
     grid-template-areas: 
     "about-me about-me-content"
     "work work-content"
-    "contact-info contact-info-content";
+    "contact contact-info-content";
+    margin-top: 1rem;
 }
 
 
@@ -41,6 +48,7 @@ body {
     display: flex;
     /* align-items: center;     */
     justify-content: space-between;
+    flex-wrap: wrap;
     align-content: center;
     height: 20vh;
     background-color: var(--dark-gray);
@@ -81,40 +89,114 @@ body {
 }
 
 /* structure Grid */
+
+
+/* about me section */
 .about-me-header {
     grid-area: about-me;
     color: var(--dark-blue);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
 }
 
+/* .about-me-header::after {
+    content: "";
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0.3rem;
+    margin-left: 10%;
+
+} */
+
 .about-me-flex {
     grid-area: about-me-content;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
 
 }
-.about-me-flex img{
-    grid-area: about-me-content;    
+.about-me-text{
+    /* grid-area: about-me-content; */
     display: flex;
-    height: 95%;
-    width: 30vw;
-    justify-content: flex-start;
-    margin-right: 20px;
+    flex-direction: column;
 }
 
-.about-me-text {
-    grid-area: about-me-content;
+.about-me-text p{
     display: flex;
     justify-content: center;
+    
     margin-left: 1rem;
+    margin-top: var(--margin-top1);
+    font-family: var(--TNR);
+    font-size: 120%;
+
 
 }
 
 
+/* work section */
+.work-header {
+    grid-area: work;
+    color: var(--dark-blue);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .work-header::after {
+    content: "";
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0.3rem;
+    margin-left: 24%;
+
+} */
+
+
+/* contact info */
+.contact-info-header {
+    grid-area: contact;
+    color: var(--dark-blue);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-info-flex {
+    grid-area: contact-info-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .contact-info p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+.contact-telephone, .contact-email, .contact-github {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+
+}
