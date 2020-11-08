@@ -25,9 +25,6 @@
     
 }
 
-body {
-    background-color: lightgray;
-}
 
 a{
     color: var(--light-blue);
@@ -227,14 +224,24 @@ a{
     grid-area: forth-item;
     height: 100%;
     width: 100%;
-    background-color: springgreen;
+    
+}
+
+.work-image-4 img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .work-image-5{
     grid-area: fifth-item;
     height: 100%;
     width: 100%;
-    background-color: steelblue;
+
+}
+
+.work-image-5 img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
