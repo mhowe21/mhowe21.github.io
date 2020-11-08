@@ -5,6 +5,7 @@
     --dark-gray: #333;
     --light-gray: #555; 
     --dark-blue: #054a9e;
+    --white: white;
 
     /* spacing */
 
@@ -22,6 +23,10 @@
     padding: 0;
     box-sizing: border-box;
     
+}
+
+body {
+    background-color: lightgray;
 }
 
 a{
@@ -88,7 +93,7 @@ a{
 .hero img{
     display: flex;
     width: 100%;
-    height: 55vh;
+    height: 70vh;
 }
 
 /* structure Grid */
@@ -97,7 +102,8 @@ a{
 /* about me section */
 .about-me-header {
     grid-area: about-me;
-    color: var(--dark-blue);
+    color: var(--white);
+    background-color: var(--dark-blue);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -153,7 +159,8 @@ a{
 /* work section */
 .work-header {
     grid-area: work;
-    color: var(--dark-blue);
+    color: var(--white);
+    background-color: var(--dark-blue);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -237,7 +244,8 @@ a{
 /* contact info */
 .contact-info-header {
     grid-area: contact;
-    color: var(--dark-blue);
+    color: var(--white);
+    background-color: var(--dark-blue);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -270,4 +278,16 @@ a{
     margin-right: 10%;
     justify-content: space-between;
 
+    
+
+}
+
+.contact-telephone::before {
+    content: "Telephone:";
+    font-size: larger;
+}
+
+.contact-email::before {
+    content: "Email:";
+    font-size: larger;
 }
