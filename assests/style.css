@@ -187,23 +187,32 @@ a{
 }
 
 .work-image-1 img {
-    max-height: 100%;
+    height: 100%;
     max-width: 100%;
 }
+
 
 .work-image-2 {
     grid-area: second-item;
     height: 100%;
-    width: 100%;
-    background-color: red;
-    
+    width: 100% 
+}
+
+.work-image-2 img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .work-image-3 {
     grid-area: third-item;
     height: 100%;
     width: 100%;
-    background-color: salmon;
+    
+}
+
+.work-image-3 img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .work-image-4 {
