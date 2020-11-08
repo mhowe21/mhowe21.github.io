@@ -165,6 +165,7 @@ a{
 .work-items {
     grid-area: work-content;
     display: grid;
+    
     grid-template-columns: repeat(3, minmax(50px, 99%));
     grid-template-rows: repeat(3, minmax(150px, auto));
     gap: 1rem;
