@@ -1,41 +1,102 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>github Pages Test</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assests/style.css">
+    <title>Mhowe | Portfolio</title>
 </head>
 
-
 <body>
-    <header id="topHeader">
-        <h1>Github Pages Test</h1>
-    </header>
-    <main id=main>
-        <div class="row">
-            <div class="column">
-                <img id="placeholderImage" src="./Images\0.jpg">
+    <nav class="navbar">
+        <div class="portfolio-name">Mason's Portfolio</div>
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-info">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <img src="assests/Images/utahArch.jpg">
+    </div>
+
+    <main>
+        <div class=grid-container>
+            <div class="about-me-header" id="about-me">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me-flex">
+                <div class="about-me-img">
+                    <img src="assests/Images/0.jpg" alt="A picture of the author">
+                </div>
+                <div class="about-me-text">
+                    <p> My Name is Mason Howe
+                    </p>
+                    <p>
+                        I was born on Salt Lake City Utah. I currently live in West Valley City Utah.
+                    </p>
+                    <p>
+                        I graduated From Salt Lake Community College in 2015
+                    </p>
+                    <p>
+                        I am currently a student at the University of Utah.
+                    </p>
+                </div>
+            </div>
+            <div class="work-header" id="work">
+                <h2>My Work</h2>
+            </div>
+            <div class="work-items">
+                <div class="work-image-1">
+                    <!-- <p>Placeholder1</p> -->
+                    <a href="https://github.com/mhowe21/CanvasScriptCollection">
+                        <img src="/assests/Images/cssLogo2.jpg" />
+                    </a>
+                </div>
+                <div class="work-image-2">
+                    <a>
+                        <img src="assests/Images/JS Logo.png">
+                    </a>
+                </div>
+                <div class="work-image-3">
+                    <a><img src="/assests/Images/HTML5icion.png"></a>
+                </div>
+                <div class="work-image-4">
+                    <a href="#"><img src="/assests/Images/nodeLogo.svg"></a>
+                </div>
+                <div class="work-image-5">
+                    <a href="https://github.com/mhowe21/CanvasScriptCollection">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg">
+                    </a>
+                </div>
+
+
             </div>
 
-
-            <div class="column">
-                <h2 id="aboutMeHeader">About Me</h2>
-                <p>This is a quick bit of infomation about me.<br>My Name is Mason Howe.<br>I was born in Salt Lake City
-                    Utah.
-                </p>
+            <div class="contact-info-header" id="contact-info">
+                <h2>Contact info</h2>
             </div>
 
-            <div id="column">
-                <h2>Contact Infomation</h2>
-                <ul>
-                    <li>Email Me:<a href="mailto:mason.a.howe@gmail.com">mason.a.howe@gmail.com</a></li>
-                    <li><a href="https://github.com/mhowe21" target="_blank">github</a></li>
-                    <li><a href="https://www.linkedin.com/in/mason-a-howe/" target="_blank">My linkedin Profile</a></li>
-                </ul>
+            <div class="contact-info-flex">
+                <div class="contact-telephone"><a class="contact-link" href="tel:801-555-5555">801-555-5555</div>
+                <div class="contact-email">
+                    <a class="contact-link" href="mailto:mason.a.howe@gmail.com">Mason.a.howe@gmail.com</a>
+                </div>
+                <div class="contact-github">
+                    <a class="contact-link" href="https://github.com" target="_blank">github</a>
+                </div>
             </div>
         </div>
     </main>
-
 </body>
 
 </html>
