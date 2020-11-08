@@ -27,9 +27,14 @@
 
 
 a{
-    color: var(--light-blue);
+    color: var(--dark-blue);
+    text-decoration: underline;
 }
 
+a:hover {
+    color: red;
+    
+}
 
 /* Primary layout grid */
 .grid-container {
@@ -55,7 +60,7 @@ a{
     flex-wrap: wrap;
     align-content: center;
     height: 20vh;
-    background-color: var(--dark-gray);
+    background-color: var(--light-gray);
     color: var(--light-blue);
     
 }
@@ -75,7 +80,7 @@ a{
 
 .navbar-links li a{
     text-decoration: none;
-    color: var(var(--light-blue));
+    color: var(--light-blue);
     font-size: 1.5rem;
     padding: 1rem;
     display: block;
@@ -84,6 +89,7 @@ a{
 
 .navbar-links li a:hover {
     background-color: var(--light-gray);
+    color: red;
 }
 
 /* Hero Img */
@@ -298,3 +304,7 @@ a{
     content: "Email:";
     font-size: larger;
 }
+
+
+/* Media Queries */
+
