@@ -1,9 +1,9 @@
-:root{
+:root {
 
     /* color variables */
     --light-blue: #88dffc;
     --dark-gray: #333;
-    --light-gray: #555; 
+    --light-gray: #555;
     --dark-blue: #054a9e;
     --white: white;
 
@@ -12,28 +12,28 @@
     /* font */
     --TNR: Times-New-Roman;
     --margin-top1: 1rem;
-   
+
 
 }
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 
-a{
+a {
     color: var(--dark-blue);
     text-decoration: underline;
 }
 
 a:hover {
     color: red;
-    
+
 }
 
 /* Primary layout grid */
@@ -42,10 +42,10 @@ a:hover {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(3, minmax(80px, auto));
     grid-gap: 2rem;
-    grid-template-areas: 
-    "about-me about-me-content"
-    "work work-content"
-    "contact contact-info-content";
+    grid-template-areas:
+        "about-me about-me-content"
+        "work work-content"
+        "contact contact-info-content";
     margin-top: 1rem;
 }
 
@@ -53,7 +53,7 @@ a:hover {
 
 
 /* Top navigation bar */
-.navbar{    
+.navbar {
     display: flex;
     /* align-items: center;     */
     justify-content: space-between;
@@ -62,15 +62,16 @@ a:hover {
     height: 20vh;
     background-color: var(--light-gray);
     color: var(--light-blue);
-    
+
 }
+
 .portfolio-name {
     font-size: 2rem;
     font-weight: bold;
     margin: 10px;
 }
 
-.navbar-links ul{
+.navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -78,7 +79,7 @@ a:hover {
 
 }
 
-.navbar-links li a{
+.navbar-links li a {
     text-decoration: none;
     color: var(--light-blue);
     font-size: 1.5rem;
@@ -93,7 +94,7 @@ a:hover {
 }
 
 /* Hero Img */
-.hero img{
+.hero img {
     display: flex;
     width: 100%;
     height: 70vh;
@@ -112,6 +113,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: larger;
 
 }
 
@@ -128,7 +130,7 @@ a:hover {
 
 }
 
-.about-me-img{
+.about-me-img {
     display: flex;
     justify-content: center;
 
@@ -139,17 +141,17 @@ a:hover {
     justify-content: center;
 } */
 
-.about-me-text{
+.about-me-text {
     /* grid-area: about-me-content; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.about-me-text p{
+.about-me-text p {
     display: flex;
     justify-content: center;
-    
+
     margin-left: 1rem;
     margin-top: var(--margin-top1);
     font-family: var(--TNR);
@@ -169,21 +171,22 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: larger;
 
 }
 
 .work-items {
     grid-area: work-content;
     display: grid;
-    
+
     grid-template-columns: repeat(3, minmax(50px, 99%));
     grid-template-rows: repeat(3, minmax(150px, auto));
     gap: 1rem;
     grid-auto-flow: dense;
-    grid-template-areas: 
-    "first-item first-item second-item"
-    "first-item first-item third-item"
-    "forth-item fifth-item ."
+    grid-template-areas:
+        "first-item first-item second-item"
+        "first-item first-item third-item"
+        "forth-item fifth-item fifth-item"
     ;
 
 }
@@ -194,7 +197,7 @@ a:hover {
     height: 100%;
     width: 100%;
     /* background-color: rebeccapurple; */
-    
+
 }
 
 .work-image-1 img {
@@ -206,7 +209,7 @@ a:hover {
 .work-image-2 {
     grid-area: second-item;
     height: 100%;
-    width: 100% 
+    width: 100%
 }
 
 .work-image-2 img {
@@ -218,7 +221,7 @@ a:hover {
     grid-area: third-item;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .work-image-3 img {
@@ -230,22 +233,22 @@ a:hover {
     grid-area: forth-item;
     height: 100%;
     width: 100%;
-    
+
 }
 
-.work-image-4 img{
+.work-image-4 img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.work-image-5{
+.work-image-5 {
     grid-area: fifth-item;
     height: 100%;
     width: 100%;
 
 }
 
-.work-image-5 img{
+.work-image-5 img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -264,7 +267,8 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    font-size: larger;
+
 }
 
 .contact-info-flex {
@@ -282,16 +286,18 @@ a:hover {
     justify-content: space-evenly;
 } */
 
-.contact-telephone, .contact-email, .contact-github {
+.contact-telephone,
+.contact-email,
+.contact-github {
     display: flex;
     flex-direction: row;
-    
+
     flex-grow: 1;
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-between;
 
-    
+
 
 }
 
@@ -308,3 +314,21 @@ a:hover {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: auto auto auto auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: var(--light-gray);
+        color: var(--light-blue);
+
+    }
+    .contact-info-header, .about-me-header, .work-header h2{
+        margin-left: 1rem;
+    }
+}
